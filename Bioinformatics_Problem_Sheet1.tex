@@ -1,0 +1,49 @@
+\documentclass[11pt,runningheads,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,hyperref,array,xcolor,multicol,verbatim,mathpazo}
+\usepackage[normalem]{ulem}
+\usepackage[pdftex]{graphicx}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\begin{document}
+%%%% In most cases you won't need to edit anything above this line %%%%
+
+\title{{\LARGE Bioinformatics Supervision}\\
+{\Large --Problem Sheet 1--}} 
+\author{Supervisor: Sebastian Müller (Department of Plant Sciences)}
+\date{}
+
+\maketitle
+
+Please hand in your work 24 hours prior to the supervision either to \texttt{sm934@cam.ac.uk} or at the Plant Scienes Department reception (make sure my name is on it). Feel free to team up with other group members, the main aim is to understand the material. If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_problemsheet<x>.<x>}
+\begin{enumerate}
+%\section{Sequence Alignments}
+	\item Why do we use dynamic programming algorithms for sequence alignment problems?
+
+	\item What is the difference between local and global alignment? What are the two good for?
+
+	\item Define the Longest Common Subsequence (LCS) problem between two strings and find a solution for the case of the two strings: ACGT and GGTTTAAGCCGT
+
+	\item Describe what needs to be taken into account for gaps in DNA sequence alignment.
+
+	\item Compute the global alignment and the best score of the following sequences CGTGAA, GACTTAC with the following parameters: match score = +5, mismatch score = -3, gap penalty = -4. Show the alignment graph including backtracking pointers or bring it to supervision.
+
+	\item If the sequences have different base composition (such as GC content) or length, what parameter values would you choose in order to determine multiple alignment of the sequences?  Justify your answer.
+
+%\section{Nusinov}
+
+
+	%%PatternHunter and Blast have been taken out 2016 as well, also Smith and Needleman are refered to as local/global only.
+	%%\item What are the most important differences between PatternHunter, BLAST, Smith-Waterman and Needleman-Wunsch algorithms?
+
+		%%Clustal has been taken out
+	%%\item Compare the heuristic used by Clustal with a dynamic algorithm for multiple alignment.
+
+	\item Copy the entire text from a FASTA file (\url{http://www.cs.ukzn.ac.za/~hughm/bio/data/DinosaurCollagen.fasta}), containing the Collagen protein sequences from a number of different species. Then enter it into an online tool for multiple sequence alignment from the European Bioinformatics Institute (\url{http://www.ebi.ac.uk/Tools/msa/kalign/}). What does the Phylogenetic tree look like? Can you change the alignment options so that the tyrannosaurus collagen is no longer paired with the newt collagen?
+
+	%%taken out from lecuture as of 2016
+	\item Discuss the limitations of the Nussinov algorithm for RNA folding prediction.
+	\item Discuss the main features of the Burrows-Wheeler transform (BWT) using the following example: T = GATATCA\$. Also explain the reversibility of BWT
+\end{enumerate}
+
+\end{document}
