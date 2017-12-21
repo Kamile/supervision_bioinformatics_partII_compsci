@@ -51,7 +51,7 @@ Your answer should contain the following terms:
 
 	\item Define the Longest Common Subsequence (LCS) problem between two strings and find a solution for the case of the two strings: \DNA{ACGT} and \DNA{GGTTTAAGCCGT}
 
-	\item Compute the \textit{global alignment} and the best score of the following sequences \DNA{CGTGAA}, \DNA{GACTTAC} with the following parameters:
+  \item\label{globalalign} Compute the \textit{global alignment} and the best score of the following sequences \DNA{CGTGAA}, \DNA{GACTTAC} with the following parameters:
 \begin{itemize}
   \item match score = +5
   \item mismatch score = -3
@@ -60,14 +60,17 @@ Your answer should contain the following terms:
 Show the alignment graph including backtracking pointers or bring it to supervision.
 
 	\item If the sequences have different base composition (such as GC content) or length, what parameter values would you choose in order to determine multiple alignment of the sequences?  Justify your answer.
+  \item  \textbf{OPTIONAL} Implement the reduced-storage variant of the global alignment algorithm in a language of your choice, and verify that it provides the same result for the inputs in question~\ref{globalalign}.
 
 \section*{Multiple Sequence Alignment}
 
-\item Compare and contrast the dynamic programming, greedy, and progressive
-approaches to aligning k sequences of length n, highlighting their respective time and memory complexities.
+\item Compare and contrast the \textit{ dynamic programming }, \textit{greedy}, and \textit{progressive} approaches to aligning k sequences of length n, highlighting their respective time and memory complexities.
+
 \item Explain the inputs and steps performed by the CLUSTALW algorithm.
   
-\item Copy the entire text from a FASTA file (\url{http://www.cs.ukzn.ac.za/~hughm/bio/data/DinosaurCollagen.fasta}), containing the Collagen protein sequences from a number of different species. Then enter it into an online tool for multiple sequence alignment from the European Bioinformatics Institute (\url{http://www.ebi.ac.uk/Tools/msa/kalign/}). What does the Phylogenetic tree look like? Can you change the alignment options so that the tyrannosaurus collagen is no longer paired with the newt collagen?
+\item Copy the entire text from a FASTA file (\url{http://www.cs.ukzn.ac.za/~hughm/bio/data/DinosaurCollagen.fasta}), containing the Collagen protein sequences from a number of different species. 
+  Then enter it into an online tool for multiple sequence alignment from the European Bioinformatics Institute (\url{http://www.ebi.ac.uk/Tools/msa/kalign/}). 
+  What does the Phylogenetic tree look like? Can you change the alignment options so that the tyrannosaurus collagen is no longer paired with the newt collagen?
 
 %% Approximate Search and Folding are non-examinable 2017
 %\section*{Approximate Search}
