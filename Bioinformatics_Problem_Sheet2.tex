@@ -22,7 +22,7 @@
 
 \maketitle
 
-Please hand in your work 24 hours prior to the supervision either to \texttt{sm934@cam.ac.uk} or at the Plant Scienes Department reception (make sure my name is on it).
+Please hand in your work 24 hours prior to the supervision either to \texttt{sm934@cam.ac.uk} or at the Plant Sciences Department reception (make sure my name is on it).
 Feel free to team up with other group members, the main aim is to understand the material.
 If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_problemsheet<x>.<x>}
 
@@ -39,7 +39,7 @@ If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_p
     Use the SmallParsimony algorithm to find the minimum parsimony cost for the given tree and identify the optimal state assignments for each node with $c(A; G) = 1$ and $c(A; A) = c(G; G) = 0$.
     \begin{figure}[h]
       \centering
-      \includegraphics[scale=0.25]{Bioinformatics_Problem_Sheet2_fig1.png}
+      \includegraphics[scale=0.25]{img/Bioinformatics_Problem_Sheet2_fig1.png}
     \end{figure}
     %\begin{enumerate}
     %%Fitch and Sankkoff has been taken out of the lecture, Sankoff is now called Small Parsimony Problem
@@ -48,6 +48,7 @@ If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_p
     %%\item What are the optimal state assignments you would obtain from part (b)? Are there any discrepancies with those you found in part (a)? If there are, provide an explanation.
     %\end{enumerate}
   \item Given the following distance matrix, calculate an evolutionary tree using UPGMA:
+  \nopagebreak
     \begin{table}[H]
       \centering
       \begin{tabular}{|l|r|r|r|l|l|l|}
@@ -60,10 +61,10 @@ If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_p
         E & 6 & 6 & 6 & \multicolumn{1}{r|}{4} & \multicolumn{1}{r|}{0} &  \\ \hline
         F & 8 & 8 & 8 & \multicolumn{1}{r|}{8} & \multicolumn{1}{r|}{8} & \multicolumn{1}{r|}{0} \\ \hline
       \end{tabular}
-      %%\caption{Distance Matrix}
       \label{}
     \end{table}
-  \item  Given the following distance matrix, calculate an evolutionary tree using neighbour joining:
+  \item  Given the following distance matrix, calculate an evolutionary tree using Neighbour-Joining algorithm:
+  \nopagebreak
     \begin{table}[H]
       \centering
       \begin{tabular}{|l|r|r|r|l|l|}
@@ -75,21 +76,19 @@ If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_p
         D & 7 & 10 & 7 & \multicolumn{1}{r|}{0} &  \\ \hline
         E & 6 & 9 & 6 & \multicolumn{1}{r|}{5} & \multicolumn{1}{r|}{0} \\ \hline
       \end{tabular}
-      %%\caption{Distance Matrix}
       \label{}
     \end{table}
 
 \section*{Pattern Matching}\label{sec:burrows_wheeler_transformation}
-\item  Implement a $TRIE(patterns)$ in a language of your choice using the patterns given in the book (Compeau, 2nd Edition, VolII, page 124) 
+\item  Implement \textit{TRIE(patterns)} in a language of your choice using the patterns given in the book (Compeau, 2nd Edition, Vol II, page 124) 
 
-$patterns$ = "ananas","and","antenna","banana","bandana","nab","nana","pan"
+\textit{patterns} =  ``ananas'', ``and", ``antenna", ``banana", ``bandana", ``nab", ``nana", ``pan"
 
-\item Implement a function $PrefixTrieMatching(Text, Trie)$ which checks whether any string from $Patterns$ matches a prefix of the string $Text$ = "panamabananas" (see page 125). Also try with $Text$ = "namabananas".
+\item Implement a function \textit{PrefixTrieMatching(Text, Trie)} which checks whether any string from $Patterns$ matches a prefix of the string $Text$ = "panamabananas" (see page 125). Also try with $Text$ = ``namabananas".
 
-  \item Discuss the main features of the Burrows-Wheeler transform (BWT) using the following example: T = \DNA{GATATCA}\$. 
-    Also explain the reversibility of BWT.
+  \item Discuss the main features of the Burrows-Wheeler transform (BWT) using the following example: T = \DNA{GATATCA}\$. Also, explain the reversibility of BWT.
 
-\item Optional: Implement $TrieMatching(Text,Trie)$ to allow pattern matching also within $Text$ as opposed to only the prefix.
+\item  \textbf{OPTIONAL}  Implement \textit{TrieMatching(Text,Trie)} to allow pattern matching also within $Text$ as opposed to only the prefix.
 
 \end{enumerate}
     \end{document}

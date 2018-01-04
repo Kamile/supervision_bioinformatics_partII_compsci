@@ -21,7 +21,7 @@
 
 Please hand in your work 24 hours prior to the supervision either to \texttt{sm934@cam.ac.uk} or at the Plant Scienes Department reception (make sure my name is on it).
 Feel free to team up with other group members, the main aim is to understand the material.
-Many of the examples and questions are based on the a book (2 Volumes) by Compeay and Pevzner~\footnote{Compeau, P. \& Pevzner, P.A. (2015). Bioinformatics algorithms: an active learning approach (2nd Edition). Active Learning Publishers}. I encourage you to borrow a copy (most college libraries should have it, let me or the lecturer know if not).
+Many of the examples and questions are based on the a book (2 Volumes) by Compeau and Pevzner~\footnote{Compeau, P. \& Pevzner, P.A. (2015). Bioinformatics algorithms: an active learning approach (2nd Edition). Active Learning Publishers}. I encourage you to borrow a copy (most college libraries should have it, let me or the lecturer know if not).
 If you hand in electronically, please name the file \texttt{group<x>\_<crsid>\_problemsheet<x>.<x>}
 
 \section*{ Introduction to Genetics }
@@ -43,34 +43,36 @@ Your answer should contain the following terms:
 \item How many different codons exist? How about different amino acids? Provide an evolutionary explanation for the discrepancy between your two answers.
 
 \section*{Pairwise Sequence Alignments}
-	\item Why do we use dynamic programming algorithms for sequence alignment problems?
 
-	\item Whats is the difference between \textit{local} and \textit{global alignment}? Try to think of applications as to when they should be used respectively.
+\item Why do we use dynamic programming algorithms for sequence alignment problems?
 
-  \item Outline the key transformations that need to be made to the algorithm in order to find optimal \textit{local alignments}, as well as incorporating \textit{affine gap penalties}. Why are these features useful? Try to find examples when they are useful. Have you changed the time complexity of the algorithm by doing so?
+\item Whats is the difference between \textit{local} and \textit{global alignment}? Try to think of applications as to when they should be used respectively.
 
-	\item Define the Longest Common Subsequence (LCS) problem between two strings and find a solution for the case of the two strings: \DNA{ACGT} and \DNA{GGTTTAAGCCGT}
+\item Outline the key transformations that need to be made to the algorithm in order to find optimal \textit{local alignments}, as well as incorporating \textit{affine gap penalties}. Why are these features useful? Try to find examples when they are useful. Have you changed the time complexity of the algorithm by doing so?
 
-  \item\label{globalalign} Compute the \textit{global alignment} and the best score of the following sequences \DNA{CGTGAA}, \DNA{GACTTAC} with the following parameters:
-\begin{itemize}
-  \item match score = +5
-  \item mismatch score = -3
-  \item gap penalty = -4
-\end{itemize}
+\item Define the Longest Common Subsequence (LCS) problem between two strings and find a solution for the case of the two strings: \DNA{ACGT} and \DNA{GGTTTAAGCCGT}
+
+\item \label{globalalign} Compute the \textit{global alignment} and the best score of the following sequences \DNA{CGTGAA}, \DNA{GACTTAC} with the following parameters:
+	\begin{itemize}
+  	\item match score = +5
+  	\item mismatch score = -3
+ 	 \item gap penalty = -4
+	\end{itemize}
 Show the alignment graph including backtracking pointers or bring it to supervision.
 
-	\item If the sequences have different base composition (such as GC content) or length, what parameter values would you choose in order to determine multiple alignment of the sequences?  Justify your answer.
-  \item  \textbf{OPTIONAL} Implement the reduced-storage variant of the global alignment algorithm in a language of your choice, and verify that it provides the same result for the inputs in question~\ref{globalalign}.
+\item If the sequences have different base composition (such as GC content) or length, what parameter values would you choose in order to determine multiple alignment of the sequences?  Justify your answer.
+
+\item  \textbf{OPTIONAL} Implement the reduced-storage variant of the global alignment algorithm in a language of your choice, and verify that it provides the same result for the inputs in question~\ref{globalalign}.
 
 \section*{Multiple Sequence Alignment}
 
-\item Compare and contrast the \textit{ dynamic programming }, \textit{greedy}, and \textit{progressive} approaches to aligning k sequences of length n, highlighting their respective time and memory complexities.
+\item Compare and contrast the \textit{dynamic programming}, \textit{greedy}, and \textit{progressive} approaches to aligning $k$ sequences of length $n$, highlighting their respective time and memory complexities.
 
 \item Explain the inputs and steps performed by the CLUSTALW algorithm.
   
 \item Copy the entire text from a FASTA file (\url{http://www.cs.ukzn.ac.za/~hughm/bio/data/DinosaurCollagen.fasta}), containing the Collagen protein sequences from a number of different species. 
   Then enter it into an online tool for multiple sequence alignment from the European Bioinformatics Institute (\url{http://www.ebi.ac.uk/Tools/msa/kalign/}). 
-  What does the Phylogenetic tree look like? Can you change the alignment options so that the tyrannosaurus collagen is no longer paired with the newt collagen?
+  What does the Phylogenetic tree look like? Can you change the alignment options, so that the tyrannosaurus collagen is no longer paired with the newt collagen?
 
 %% Approximate Search and Folding are non-examinable 2017
 %\section*{Approximate Search}
@@ -90,17 +92,18 @@ Show the alignment graph including backtracking pointers or bring it to supervis
 %\item Describe the Nussinov algorithm for RNA secondary structure prediction,
 %its underlying assumptions and time/storage complexities.
 %What should be the output of the algorithm on the sequence GCAACGUCG? (this is a test of
-%understanding—do not actually perform the algorithm on this sequence!)
+%understanding, do not actually perform the algorithm on this sequence!)
 %
-%  \item Discuss the limitations of the Nussinov algorithm.
+%\item Discuss the limitations of the Nussinov algorithm.
 
-	%%PatternHunter and Blast have been taken out 2016 as well, also Smith and Needleman are refered to as local/global only.
-	%%\item What are the most important differences between PatternHunter, BLAST, Smith-Waterman and Needleman-Wunsch algorithms?
+%%PatternHunter and Blast have been taken out 2016 as well, also Smith and Needleman are refered to as local/global only.
 
-		%%Clustal has been taken out
-	%%\item Compare the heuristic used by Clustal with a dynamic algorithm for multiple alignment.
+%\item What are the most important differences between PatternHunter, BLAST, Smith-Waterman and Needleman-Wunsch algorithms?
 
-	%%taken out from lecuture as of 2016
+%%Clustal has been taken out
+
+%\item Compare the heuristic used by Clustal with a dynamic algorithm for multiple alignment.
+
 \end{enumerate}
 
 \end{document}
